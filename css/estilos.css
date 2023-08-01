@@ -123,7 +123,7 @@ html {
 .body-index {
   width: 100%;
   min-height: 100vh;
-  background-image: url(../imgs/main/fondo-indexx.webp);
+  background-image: url(../../imgs/main/fondo-indexx.webp);
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
