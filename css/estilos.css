@@ -23,107 +23,11 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-.header { /*header*/
-  grid-area: header;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  margin: 0 auto;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  background-color: #AE2A3F;
-  border-bottom: 1px solid #1C3334;
-  border-radius: 0;
-  box-shadow: 4px 4px 8px #1C3334;
-}
-.header #logo { /*logo*/
-  position: relative;
-  right: 120px;
-  bottom: 4px;
-  width: 220px;
-  height: unset;
-}
-.header #logo a { /*link logo*/
-  color: #FFD3B5;
-}
-.header nav {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: unset;
-  width: 100%;
-}
-.header nav .navbar-toggler-icon {
-  color: #1C3334;
-}
-.header nav ul {
-  padding: 10px;
-  height: 110px;
-  display: inline-flex;
-  align-items: center;
-}
-.header nav ul li a {
-  margin: 30px;
-  padding: 5px;
-  font-family: "Roboto Bold", sans-serif;
-  font-weight: 700;
-  font-style: false;
-  italic: normal;
-  font-size: 22px;
-  line-height: 1.3;
-  letter-spacing: 2px;
-  text-decoration: none;
-  color: #F8B195;
-  transition: 0.4s ease;
-}
-.header nav ul li a:hover {
-  color: #F5F5F5;
-  transform: scale(1.2);
-}
-.header nav ul li a#active {
-  color: #F5F5F5;
-  background-color: #FF5733;
-  border-radius: 5px;
-  box-shadow: 4px 4px 8px #1C3334;
-}
-.header #logo-redes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-  height: 100px;
-  margin-top: 5px;
-  margin-left: 4rem;
-}
-.header #logo-redes .fa-instagram,
-.header #logo-redes .fa-facebook,
-.header #logo-redes .fa-whatsapp,
-.header #logo-redes .fa-twitter { /*iconos redes*/
-  padding: 10px;
-  margin: 0.5rem;
-  font-size: 20px;
-  background-color: #1C3334;
-  border-radius: 50px;
-  box-shadow: 3px 3px 6px #1C3334;
-  transition: 0.5s ease;
-}
-.header #logo-redes a {
-  color: #FFD3B5;
-}
-.header #logo-redes i:hover { /*iconos hover*/
-  background-color: #F5F5F5;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px #1C3334;
-  color: #AE2A3F;
-  opacity: 0.7;
-  transform: scale(1.09);
-}
-
 /*fondo index*/
 .body-index {
   width: 100%;
   min-height: 100vh;
-  background-image: url(../../imgs/main/fondo-indexx.webp);
+  background-image: url(../imgs/main/fondo-indexx.webp);
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
@@ -307,6 +211,102 @@ html {
   display: flex;
   width: 450px;
   height: 600px;
+}
+
+.header { /*header*/
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: #AE2A3F;
+  border-bottom: 1px solid #1C3334;
+  border-radius: 0;
+  box-shadow: 4px 4px 8px #1C3334;
+}
+.header #logo { /*logo*/
+  position: relative;
+  right: 120px;
+  bottom: 4px;
+  width: 220px;
+  height: unset;
+}
+.header #logo a { /*link logo*/
+  color: #FFD3B5;
+}
+.header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: unset;
+  width: 100%;
+}
+.header nav .navbar-toggler-icon {
+  color: #1C3334;
+}
+.header nav ul {
+  padding: 10px;
+  height: 110px;
+  display: inline-flex;
+  align-items: center;
+}
+.header nav ul li a {
+  margin: 30px;
+  padding: 5px;
+  font-family: "Roboto Bold", sans-serif;
+  font-weight: 700;
+  font-style: false;
+  italic: normal;
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #F8B195;
+  transition: 0.4s ease;
+}
+.header nav ul li a:hover {
+  color: #F5F5F5;
+  transform: scale(1.2);
+}
+.header nav ul li a#active {
+  color: #F5F5F5;
+  background-color: #FF5733;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px #1C3334;
+}
+.header #logo-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 100px;
+  margin-top: 5px;
+  margin-left: 4rem;
+}
+.header #logo-redes .fa-instagram,
+.header #logo-redes .fa-facebook,
+.header #logo-redes .fa-whatsapp,
+.header #logo-redes .fa-twitter { /*iconos redes*/
+  padding: 10px;
+  margin: 0.5rem;
+  font-size: 20px;
+  background-color: #1C3334;
+  border-radius: 50px;
+  box-shadow: 3px 3px 6px #1C3334;
+  transition: 0.5s ease;
+}
+.header #logo-redes a {
+  color: #FFD3B5;
+}
+.header #logo-redes i:hover { /*iconos hover*/
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
+  color: #AE2A3F;
+  opacity: 0.7;
+  transform: scale(1.09);
 }
 
 /*estilos del footer*/
