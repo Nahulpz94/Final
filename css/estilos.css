@@ -746,7 +746,7 @@ html {
   width: 90%;
   height: 520px;
   margin: 0 auto;
-  background-image: url(../imgs/nosotros/fondo-videos.png);
+  background-image: url(./imgs/nosotros/fondo-videos.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }

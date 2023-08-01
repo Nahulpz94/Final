@@ -78,7 +78,7 @@
         @include flex(flex, space-around,center);
         @include medidas (90%, 520px);
         margin: 0 auto;
-        background-image: url(../imgs/nosotros/fondo-videos.png);
+        background-image: url(./imgs/nosotros/fondo-videos.webp);
         background-size: cover;
         background-repeat: no-repeat;
         .video-nosotros { /*videos*/

@@ -3,7 +3,7 @@
 .body-index {
     width: $full-width;
     min-height: 100vh;
-    background-image: url(/imgs/main/fondo-index.webp);
+    background-image: url(./imgs/main/fondo-index.webp);
     background-repeat: no-repeat;
     background-size:cover;
     display: grid;
@@ -18,7 +18,7 @@
         margin: 0 auto;
         display: flex;  
         flex-wrap: wrap;
-        background-image: url(imgs/main/fondo-volvimos.webp);
+        background-image: url(./imgs/main/fondo-volvimos.webp);
         background-size: cover;
         background-repeat: no-repeat;
         color: map-get($colores , salmon-claro) ;
