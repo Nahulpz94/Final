@@ -10,7 +10,7 @@
     "section-fotos"
     "section-videos"
     "footer";
-    background-image: url(../imgs/nosotros/fondo-nosotros.webp);
+    background-image: url(../../imgs/fondo-general.webp);
     background-repeat: no-repeat;
     background-size: cover;
         .contenedor-h1-nosotros{
@@ -78,7 +78,7 @@
         @include flex(flex, space-around,center);
         @include medidas (90%, 520px);
         margin: 0 auto;
-        background-image: url(./imgs/nosotros/fondo-videos.webp);
+        background-image: url(../../imgs/nosotros/fondo-nosotros.webp);
         background-size: cover;
         background-repeat: no-repeat;
         .video-nosotros { /*videos*/
