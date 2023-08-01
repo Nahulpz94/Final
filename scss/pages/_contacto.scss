@@ -10,7 +10,7 @@
     "main"
     "footer"
     ;
-    background-image: url(/imgs/contacto/fondo-contacto.webp);
+    background-image: url(../imgs/contacto/fondo-contacto.webp);
     background-repeat: no-repeat;
     background-size: cover;
     .contenedor-h1-contacto{
@@ -48,7 +48,7 @@
         padding: 20px;
         margin: 0 auto 3px;
         @include flex(flex, space-evenly,center);
-        background-image: url(../imgs/Contacto/fondo-formulario.webp);
+        background-image: url(../imgs/contacto/fondo-formulario.webp);
         background-repeat: no-repeat;
         background-size: cover;
         @include shadow (5px, 2px);
