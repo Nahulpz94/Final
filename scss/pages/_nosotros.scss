@@ -10,7 +10,7 @@
     "section-fotos"
     "section-videos"
     "footer";
-    background-image: url(../imgs/nosotros/fondo-nosotros.webp);
+    background-image: url(../imgs/nosotros/fondo-nosotrosss.webp);
     background-repeat: no-repeat;
     background-size: cover;
         .contenedor-h1-nosotros{
@@ -63,7 +63,7 @@
         grid-area: section-fotos;
         @include flex(flex, space-between, center);
         margin: 0 auto;
-        padding: 2rem;
+        padding: 3rem 2rem;
         @include medidas (90%, 550px);
         background-color: map-get($colores , salmon-claro) ;
         @include animate(slideInUp, 3s, 1);
@@ -78,7 +78,7 @@
         @include flex(flex, space-around,center);
         @include medidas (90%, 520px);
         margin: 0 auto;
-        background-image: url(../imgs/nosotros/fondo-videos.png);
+        background-image: url(../imgs/nosotros/fondo-videosss.png);
         background-size: cover;
         background-repeat: no-repeat;
         .video-nosotros { /*videos*/

@@ -649,7 +649,7 @@ html {
 .body-nosotros {
   display: grid;
   grid-template-areas: "header" "h1" "main" "section-fotos" "section-videos" "footer";
-  background-image: url(../imgs/nosotros/fondo-nosotros.webp);
+  background-image: url(../imgs/nosotros/fondo-nosotrosss.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -723,7 +723,7 @@ html {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem 2rem;
   width: 90%;
   height: 550px;
   background-color: #FFD3B5;
@@ -746,7 +746,7 @@ html {
   width: 90%;
   height: 520px;
   margin: 0 auto;
-  background-image: url(../imgs/nosotros/fondo-videos.png);
+  background-image: url(../imgs/nosotros/fondo-videosss.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
