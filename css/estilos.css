@@ -123,7 +123,7 @@ html {
 .body-index {
   width: 100%;
   min-height: 100vh;
-  background-image: url(../imgs/Main/fondo-index.webp);
+  background-image: url(../imgs/main/fondo-index.webp);
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
@@ -136,7 +136,7 @@ html {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  background-image: url(../imgs/Main/fondo-volvimos.webp);
+  background-image: url(../imgs/main/fondo-volvimos.webp);
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFD3B5;
@@ -539,7 +539,6 @@ html {
   margin: 20px auto;
   padding: 1rem 0;
   display: grid;
-  display: none;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 2fr;
   grid-gap: 10px;
@@ -650,7 +649,7 @@ html {
 .body-nosotros {
   display: grid;
   grid-template-areas: "header" "h1" "main" "section-fotos" "section-videos" "footer";
-  background-image: url(../imgs/Nosotros/fondo-nosotros.webp);
+  background-image: url(../imgs/nosotros/fondo-nosotros.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -747,7 +746,7 @@ html {
   width: 90%;
   height: 520px;
   margin: 0 auto;
-  background-image: url(../imgs/Nosotros/fondo-Videos.png);
+  background-image: url(../imgs/nosotros/fondo-Videos.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
