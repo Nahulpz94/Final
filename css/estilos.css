@@ -535,10 +535,11 @@ html {
 .body-menu .card-container-grid {
   grid-area: section;
   width: 90%;
-  height: 600px;
+  height: 650px;
   margin: 20px auto;
   padding: 1rem 0;
   display: grid;
+  display: none;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 2fr;
   grid-gap: 10px;
@@ -966,7 +967,7 @@ html {
 .body-contacto {
   display: grid;
   grid-template-areas: "header" "h1" "banner" "main" "footer";
-  background-image: url(../imgs/Contacto/fondo-contacto.webp);
+  background-image: url(/imgs/contacto/fondo-contacto.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
