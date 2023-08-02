@@ -1,5 +1,438 @@
-/*media movil*/
-@media (min-width:320px) and (max-width: 600px){
+/*media movil 320 a 449px*/
+
+@media (min-width:320px) and (max-width: 449px){
+
+    .header {
+        @include flex(flex, center,center);
+        @include medidas (100%, auto);
+        nav {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            .container{
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                
+                .navbar-brand {
+                    display: flex;
+                    position: relative;
+                    #logo {
+                        width: 170px;
+                        right: 2rem;
+                        top: 10px;
+                    }
+                } 
+                .sidebar{
+                    background-color: rgba(174, 42, 63, 0.70);
+                    backdrop-filter: blur(20px);
+                    letter-spacing: 2px;
+                    }
+                    .offcanvas-backdrop.fade.show{
+                        background-color: map-get($colores, secundario);
+                    }
+                    .navbar-nav{
+                        @include medidas (100%, auto);
+                        padding: 0;
+                        margin: 0;
+                        .nav-link {
+                            @include flex (flex, center, center);
+                            @include medidas (120px, unset);
+                        }
+                    }
+                    #logo-redes {
+                        width: unset;
+                        margin: 5px auto 0;
+                }
+            }
+        }
+    }
+    .body-index{ /*index*/
+        display: block;
+        @include medidas (100%, unset);
+        padding: 0;
+        margin: 0;
+        .main-index {
+            @include medidas (100%, unset);
+            .main-overlay {
+                height: unset;
+                padding: 0 2rem 2rem;  
+                .contenedor-volvimos {
+                    @include medidas (100%, unset);
+                    .volvimos {
+                        display: flex;
+                        justify-content: flex-start;
+                        @include medidas (100%, unset);
+                        margin-top: 0;
+                        padding: 0;
+                        margin-bottom: 20px;
+                        line-height: 1.2;
+                        font-size: 2em;
+                        letter-spacing: 5px;
+                        color:map-get($colores , salmon-claro) ; 
+                        animation-name: none;
+                        .volvimos-span{
+                            font-size: 2rem
+                        }
+                    }
+                    .volvimos-h3 {
+                        @include medidas (100%, unset);
+                        text-align: left;
+                        font-size: 1.5em;
+                        letter-spacing: 0;
+                        animation-name: none;
+                        color: map-get($colores , salmon-oscuro);
+                    }
+                }
+                .contenedor-botones-index{
+                    height: unset;
+                    animation-name: none;
+                    .boton {
+                        height: 35px;
+                        padding: 20px 10px;
+                        margin: 0 10px; 
+                        animation-name: none;
+                    }
+                }
+            }
+        }
+        .index-section-bottom { /*section bottom*/
+            display: block;
+            margin: 0 auto;
+            @include medidas (100%, unset);
+            .novedad {
+                @include flex(flex, center, center);
+                margin: 0;
+                padding: 1em;
+                animation-name: none;
+            }
+            .contenedor-videos-index {
+                @include medidas (90%, auto);
+                margin: 0 auto;
+                @include flex(flex, space-around, center);
+                flex-flow: column wrap;
+                .pizzaparty {
+                    @include medidas (100%, unset);
+                    margin-bottom: 2rem;
+                    border: none;
+                }
+                .video-index {
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+                .logo-novedad {
+                    width: 100%;
+                    display: none;
+                }
+            }
+        }
+    } 
+    .footer { /*footer*/
+        height: unset;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+            .footer-info {
+            @include flex(flex, center, center);
+            flex-wrap: wrap;
+            margin: 1rem 0 0 0;
+            #footer-phone {
+                font-size: 18px;
+                padding: 0;
+            }
+            #footer-envelope {
+                font-size: 18px;
+            }
+            h3 {
+                font-size: 18px;
+                @include font-roboto(700, false, 1.5rem, 1.1);
+            }
+        }
+        .footer-redes {
+            width: 100%;
+            margin: 0 auto;
+            @include flex(flex, center, center);
+        }
+        .footer-hora {
+            @include flex(flex, center, center);
+            width: 100%;
+            height: auto;
+            margin: 0;
+            h3 {
+                font-size: 18px;
+                @include font-roboto(700, false, 1.5rem, 1.1);
+            }
+            p {
+                letter-spacing: 0;
+                font-size: 16px;
+                @include font-roboto(500, false, 1.5rem, 1.1);
+            }
+        }
+        .footer-ubicacion {
+            @include flex(flex, center, center);
+            flex-direction: column;
+            height: auto;
+            margin: 0;
+            h3{
+                font-size: 18px;
+                @include font-roboto(700, false, 1.5rem, 1.1);
+            }
+            p {
+                letter-spacing: 0;
+                font-size: 16px;
+                @include font-roboto(500, false, 1.5rem, 1.1);
+            }
+        }
+        .scroll-up-container{
+            position: fixed;
+            @include medidas(30px, 30px);
+            bottom: 6px;
+            right: 6px;
+            border-radius: 50%;
+            img{
+                @include medidas(30px, 30px);
+            }
+        }
+    }
+    #body-menu { /*menu*/
+    .contenedor-h1-menu{
+        padding: 20px;
+        @include flex(flex, center, center);
+        @include medidas (100%, auto);
+        .nuestro-menu {
+            @include medidas (100%, auto);
+            padding: 20px 10px;
+            font-size: 2em;
+        }
+    }
+    .menu-section-top { /*section top*/
+        @include medidas (100%, auto);
+        @include flex(flex, center, center);
+        flex-flow: column wrap;
+        margin: 0;
+        .img-menu {
+            margin-bottom: 1rem;
+            width: 100%;
+            box-shadow: none;
+        }
+    }
+    .menu-section-bottom { /*section bottom*/
+        @include flex(flex, center, center);
+        flex-wrap: wrap;
+        width: 100%;
+        .menu-img{
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+    }  
+    .card-container-grid{
+        @include flex(flex, center, center);
+        @include medidas (100%, unset);
+        margin: 0;
+        gap: 2rem;
+        padding: 3rem 0;
+        flex-flow: column wrap;
+        background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
+        .card-container {
+            @include flex (flex,center, center);
+            width: 100%;
+            margin: 0;
+            .card-1 {
+                width: 18rem!important;
+                .card-front {
+                    width: 100%;
+                }
+                .card-back {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+    .body-nosotros { /*nosotros*/
+        @include medidas (100%, 100vh);
+        display: block;
+        margin: 0;
+        .contenedor-h1-nosotros{
+            @include flex(flex, center, center);
+            width: 100%;
+        .nosotros-conocenos {
+            margin: 0;
+            width: 100%;
+            font-size: 2em;
+            }
+        }
+        .nosotros-main { /*nosotros main*/
+            display: flex;
+            padding: 2rem 0;
+            width: 100%;
+            margin: 0 auto;
+            flex-direction: column;
+            .img-nosotros {
+                width: 90%;  
+                margin: 1rem 1rem;
+            }
+            .nosotros-historia {
+                margin: 2rem 1rem;
+                padding-left: 1rem;
+                text-align: left;
+            }
+            .img-2{
+                width: 90%;
+                margin: 1rem 1rem;
+            }
+        }
+        .section-fotos { /*section fotos*/
+            @include medidas (100%, unset);
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 1.5rem;
+            gap: 20px;
+            .img-nosotros {
+                width: 100%;  
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .section-videos { /*section videos*/
+            @include flex(flex, center, center);
+            @include medidas (100%, unset);
+            padding: 1rem 0;
+            background: none;
+            background-color: map-get($colores , primario);
+            flex-flow: column wrap;
+            .video-nosotros {
+                @include medidas (80%, unset);
+                margin: 1rem 0;
+                border: none;
+            }
+        }
+    }
+    .body-promos { /*promos*/
+        @include medidas (100%, 100vh);
+        display: block;
+        margin: 0;
+        background-color: map-get($colores , primario);
+        .contenedor-h1-promos {
+            @include flex(flex, center,center);
+            @include medidas (100%, unset);
+            .promo-h1 {
+            font-size: 2.2em;
+            width: 100%;
+            }
+        }
+        .promo-section-container{
+            .promo-section-top { /*promo top*/
+                @include medidas (100%, unset);
+                padding-top: 30px;
+                margin: 0 auto;
+                @include flex(flex, space-around, space-around);
+                flex-direction: column;
+                background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
+                .promo-img {
+                    @include medidas (100%, unset);
+                }
+            }
+            .promo-section-bottom { /*promo bottom*/
+                @include medidas (100%, unset);
+                padding-top: 4px;
+                @include flex(flex, center, center);
+                flex-direction: column;
+                background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
+                .promo-img {
+                    @include medidas (100%, unset);
+                }
+            }
+        }
+        .contenedor-h2-mediospago{ /*medios pago*/
+            @include flex(flex, center,center);
+                padding: 30px;
+                @include medidas (100%, auto);
+            .medio-pago {
+                text-align: center;
+                width: 100%;
+                font-size: 2em;
+                margin: 0;
+            }
+        }
+        .section-mediopagos{
+            @include medidas (100%, unset);
+            padding-bottom: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            background: none;
+        .caja-efectivo,
+        .mercado-pago{
+            @include flex(flex, center, center);
+            margin: 1rem auto;
+            @include medidas (85%, 250px);
+            background-color: map-get($colores, primario);
+            border: 1px solid map-get($colores, secundario );
+            @include shadow (5px, 4px);
+            }
+        .tarjetas{
+            @include flex(flex, center, center);
+            margin: 1rem auto;
+            @include medidas (85%, 250px);
+            background-color: map-get($colores, primario);
+            border: 1px solid map-get($colores, secundario );
+            @include shadow (5px, 4px);
+                .tarjeta {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .body-contacto { /*contacto*/
+        @include medidas(100%, unset);
+        display: block;
+        margin: 0;
+        .contenedor-h1-contacto {
+            @include flex(flex, center, center);
+            width: 100%;
+            background-color: map-get($colores ,secundario );
+            .contacto-h1{
+                width: 100%;
+                font-size: 2.1em;
+                
+            }
+        }
+        .contenedor-banner{ 
+            @include medidas(100%, unset);
+                .banner-contacto {
+                    @include medidas (100%, 150px);
+                }
+            }
+        .main-contacto{ /*contacto main*/
+            @include flex(flex, center,center);
+            width: 100%;
+            flex-flow: column wrap;
+            background: none;
+            background-color: map-get($colores , primario);
+            .form-contacto{
+                margin: 1rem 0;
+                .contenedor-boton-contacto{
+                    height: 100px;
+                    .boton-contacto {
+                        width: 75%;
+                    }
+                }
+            }
+            .contenedor-mapa{
+                width: 100%;
+                margin: 0 auto;
+                padding: 0;
+                .mapa {
+                    width: 100%;
+                }
+            }
+        }
+        
+    }/*cierre body-contacto*/
+}/*cierre querie 320 a 450*/  
+
+/*media movil 450 a 500px*/
+@media (min-width:450px) and (max-width: 500px){
 
     .header {
         @include flex(flex, center,center);
@@ -18,7 +451,7 @@
                     display: flex;
                     position: relative;
                     left: 3em;
-                    top:10px;
+                    top:15px;
                 } 
                 .sidebar{
                     background-color: rgba(174, 42, 63, 0.70);
@@ -190,7 +623,7 @@
             }
         }
     }
-    #body-menu {
+    .body-menu {
     .contenedor-h1-menu{
         padding: 20px;
         @include flex(flex, center, center);
@@ -198,7 +631,7 @@
         .nuestro-menu {
             @include medidas (90%, auto);
             padding: 20px;
-            font-size: 3em;
+            font-size: 2em;
         }
     }
     .menu-section-top {
@@ -229,7 +662,8 @@
         flex-flow: column wrap;
         background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
         .card-container {
-            margin: 1rem;
+            @include flex (flex, center, center);
+            margin: 2rem 1rem 2rem 1rem;
         }
     }
 }
@@ -327,7 +761,7 @@
             .medio-pago {
                 text-align: center;
                 width: 80%;
-                font-size: 2.5em;
+                font-size: 2.4em;
                 margin: 0;
             }
         }
@@ -399,9 +833,3 @@
     }/*cierre body-contacto*/
 } /*cierre querie*/  
 
-@media (max-width: 531px){ /*breakpoint*/
-    .navbar-toggler{
-        margin-top: 2em;
-        margin-right: 1em ;
-    }
-}
