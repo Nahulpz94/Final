@@ -725,7 +725,7 @@ html {
   margin: 0 auto;
   padding: 3rem 2rem;
   width: 90%;
-  height: 550px;
+  height: 580px;
   background-color: #FFD3B5;
   animation-name: slideInUp;
   animation-duration: 3s;
@@ -744,7 +744,7 @@ html {
   justify-content: space-around;
   align-items: center;
   width: 90%;
-  height: 520px;
+  height: 600px;
   margin: 0 auto;
   background-image: url(../imgs/nosotros/fondo-videosss.png);
   background-size: cover;

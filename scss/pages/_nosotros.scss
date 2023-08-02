@@ -64,7 +64,7 @@
         @include flex(flex, space-between, center);
         margin: 0 auto;
         padding: 3rem 2rem;
-        @include medidas (90%, 550px);
+        @include medidas (90%, 580px);
         background-color: map-get($colores , salmon-claro) ;
         @include animate(slideInUp, 3s, 1);
         animation-timing-function: ease-in;
@@ -76,7 +76,7 @@
     .section-videos { /*seccion videos*/
         grid-area: section-videos;
         @include flex(flex, space-around,center);
-        @include medidas (90%, 520px);
+        @include medidas (90%, 600px);
         margin: 0 auto;
         background-image: url(../imgs/nosotros/fondo-videosss.png);
         background-size: cover;
