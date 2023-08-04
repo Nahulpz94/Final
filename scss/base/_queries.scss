@@ -360,6 +360,9 @@
     
     .body-menu {
         display: block;
+        background-image: url(../../imgs/fondo-general.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
         .contenedor-h1-menu{
             .nuestro-menu {
                 width: 100%;
@@ -383,6 +386,11 @@
             height: unset;
             align-items: center;
             justify-items: center;
+            background-color: black;
+            background-image: url(../../imgs/menu/fondo-menu-3.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 1px solid $primario;
             .card-container{
                 width: 100%;
                 display: flex;

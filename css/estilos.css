@@ -1506,6 +1506,9 @@ html {
   }
   .body-menu {
     display: block;
+    background-image: url(../../imgs/fondo-general.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .body-menu .contenedor-h1-menu .nuestro-menu {
     width: 100%;
@@ -1527,6 +1530,11 @@ html {
     height: unset;
     align-items: center;
     justify-items: center;
+    background-color: black;
+    background-image: url(../../imgs/menu/fondo-menu-3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #AE2A3F;
   }
   .body-menu .card-container-grid .card-container {
     width: 100%;
