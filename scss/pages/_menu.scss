@@ -21,7 +21,7 @@
         background-color: map-get($colores , secundario);
         @include animate(fadeInUp, 1s, 1);
         .nuestro-menu {/*h1 menu*/
-            width: 90%;
+            width: 100%;
             margin: 0;
             @include font-roboto(700, false, 60px, 1);
             text-align: center;

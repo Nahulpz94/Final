@@ -495,7 +495,7 @@ html {
   animation-iteration-count: 1;
 }
 .body-menu .contenedor-h1-menu .nuestro-menu { /*h1 menu*/
-  width: 90%;
+  width: 100%;
   margin: 0;
   font-family: "Roboto Bold", sans-serif;
   font-weight: 700;
@@ -773,8 +773,7 @@ html {
 .body-promos .contenedor-h1-promos {
   grid-area: h1;
   width: 90%;
-  height: unset;
-  padding: 40px;
+  padding: 42px;
   margin: 0 auto;
   color: #F5F5F5;
   background-color: #1C3334;
@@ -1372,7 +1371,7 @@ html {
   .header {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 10000;
     width: 100%;
   }
   .header .navbar {

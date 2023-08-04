@@ -14,8 +14,8 @@
     background-size: cover;
     .contenedor-h1-promos{
         grid-area: h1;
-        @include medidas (90%, unset);
-        padding: 40px;
+        width: 90%;
+        padding: 42px;
         margin: 0 auto;
         color:map-get($colores , terciario);
         background-color:map-get($colores , secundario);
