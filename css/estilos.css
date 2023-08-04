@@ -106,6 +106,7 @@ html {
   animation-name: zoomInUp;
   animation-duration: 2s;
   animation-iteration-count: 1;
+  margin-top: 2rem;
 }
 .body-index .main-index .contenedor-botones-index a {
   display: flex;
@@ -1613,6 +1614,9 @@ html {
   }
   .body-promos .section-mediopagos .mercado-pago {
     margin: 1rem;
+  }
+  .body-contacto .main-contacto .form-contacto .contenedor-boton-contacto .boton-contacto {
+    width: 80%;
   }
 }
 /*media movil 450 a 600px*/

@@ -58,6 +58,7 @@
             @include flex(flex, center, center);
             @include medidas (100%, 40px);
             @include animate(zoomInUp, 2s, 1);
+            margin-top: 2rem;
             a { 
                 @include flex(flex, center, center);
                 color: map-get($colores , terciario);
