@@ -184,7 +184,6 @@ html {
   align-items: center;
 }
 .body-index .index-section-bottom .contenedor-videos-index .pizzaparty { /*foto pizza party */
-  display: flex;
   width: 500px;
   height: 600px;
   border-radius: 5px;
@@ -1175,56 +1174,247 @@ html {
   box-shadow: 5px 5px 10px #1C3334;
 }
 
-@media (min-width: 1024px) and (max-width: 1300x) {
+@media (min-width: 1024px) and (max-width: 1300px) {
   .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: space-between;
   }
   .header .navbar {
-    margin: 0;
-    padding: 0;
     width: 100%;
-  }
-  .header .navbar .navbar-nav {
+    height: unset;
     padding: 0;
-    margin: 0;
-    justify-content: space-between;
-  }
-  .header .navbar .navbar-nav .nav-item a {
-    margin: 0;
-    font-size: 1.1rem;
-  }
-  .header .navbar .navbar-nav .nav-item a:hover {
-    transform: scale(1.1);
   }
   .header .navbar .container {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .header .navbar .container .navbar-brand {
-    width: 0;
-    margin: 0;
+    width: 20%;
     padding: 0;
+    margin: 0;
   }
-  .header .navbar .container .navbar-brand #logo {
-    width: 150px;
-    height: 100px;
+  .header .navbar .container .navbar-brand img {
     position: relative;
-    bottom: 1px;
+    width: 170px;
+    margin-left: 80%;
   }
-  .header .navbar .container #logo-redes {
+  .header .navbar .container .offcanvas-body {
     margin: 0;
     padding: 0;
+  }
+  .header .navbar .container .offcanvas-body .navbar-nav {
+    height: unset;
+    padding: 0;
+    margin-left: 20%;
+  }
+  .header .navbar .container .offcanvas-body .navbar-nav .nav-item {
+    display: flex;
+  }
+  .header .navbar .container .offcanvas-body .navbar-nav .nav-item .nav-link {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .header .navbar .container .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
+    transform: scale(1.05);
+  }
+  .header .navbar .container .offcanvas-body .gap-1 {
+    display: none;
+    height: 0% !important;
+    width: 0% !important;
+    margin: 0;
+    padding: 0;
+  }
+  .header .navbar .container .offcanvas-body .gap-1 a {
+    display: none;
   }
   .body-index {
+    display: block;
     width: 100%;
-    background-size: cover;
+    height: unset;
+    padding: 0;
+    margin: 0;
   }
   .body-index .main-index {
+    width: 90%;
+    height: unset;
+  }
+  .body-index .main-index .main-overlay {
+    height: unset;
+    padding: 0 2rem 2rem;
+  }
+  .body-index .main-index .main-overlay .contenedor-volvimos {
+    width: 100%;
+    height: unset;
+  }
+  .body-index .main-index .main-overlay .contenedor-volvimos .volvimos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: unset;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    color: #FFD3B5;
+    animation-name: none;
+  }
+  .body-index .main-index .main-overlay .contenedor-volvimos .volvimos .volvimos-span {
+    font-size: 3rem;
+  }
+  .body-index .main-index .main-overlay .contenedor-volvimos .volvimos-h3 {
+    width: 100%;
+    height: unset;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0;
+    animation-name: none;
+    color: #F8B195;
+  }
+  .body-index .main-index .main-overlay .contenedor-botones-index {
+    height: unset;
+    animation-name: none;
+  }
+  .body-index .main-index .main-overlay .contenedor-botones-index .boton {
+    height: 35px;
+    padding: 10px 0;
+    animation-name: none;
+  }
+  .body-index .index-section-bottom {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .body-index .index-section-bottom .novedad {
+    margin: 0;
+    padding: 1em;
+    animation-name: none;
+  }
+  .body-index .index-section-bottom .contenedor-videos-index {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 650px;
     margin: 0 auto;
+  }
+  .body-index .index-section-bottom .contenedor-videos-index .pizzaparty {
+    width: 400px;
+    height: 572px;
+    margin-bottom: 2rem;
+  }
+  .body-index .index-section-bottom .contenedor-videos-index .video-index {
+    width: 400px;
+    height: 570px;
+    margin: 0 0 2rem 1rem;
+  }
+  .body-index .index-section-bottom .contenedor-videos-index .logo-novedad {
+    width: 0%;
+    display: none;
+  }
+  .body-menu {
+    position: absolute;
+    display: block;
+  }
+  .body-menu .contenedor-h1-menu .nuestro-menu {
+    width: 100%;
+    padding: 0;
+  }
+  .body-menu .menu-section-top {
+    flex-direction: column;
+    height: unset;
+  }
+  .body-menu .menu-section-top .img-menu {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .body-menu .card-container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 4fr;
+    grid-gap: 40px;
+    height: unset;
+    align-items: center;
+    justify-items: center;
+  }
+  .body-menu .card-container-grid .card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .body-menu .card-container-grid .card-container .card-1 {
+    width: 100%;
+  }
+  .body-menu .card-container-grid .card-container .card-1 .card-front {
+    width: 100%;
+  }
+  .body-menu .card-container-grid .card-container .card-1 .card-front img {
+    width: 100%;
+  }
+  .body-menu .menu-section-bottom {
+    flex-direction: column;
+  }
+  .body-menu .menu-section-bottom .menu-img {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .body-nosotros .nosotros-main {
+    width: 90%;
+    flex-direction: column;
+  }
+  .body-nosotros .nosotros-main .img-nosotros {
+    width: 320px;
+    height: 370px;
+  }
+  .body-nosotros .nosotros-main .nosotros-historia {
+    font-size: 1.3rem;
+    letter-spacing: 0;
+    margin-top: 2rem;
+  }
+  .body-nosotros .nosotros-main .img-2 {
+    width: 320px;
+    height: 370px;
+  }
+  .body-nosotros .section-fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .body-promos .promo-section-container .promo-section-top {
+    height: auto;
+    padding: 2rem 0 1rem 0;
+  }
+  .body-promos .promo-section-container .promo-section-top .promo-img {
+    width: 30%;
+    height: 500px;
+  }
+  .body-promos .promo-section-container .promo-section-bottom {
+    height: auto;
+    padding: 0.3rem 0 1.5rem 0;
+  }
+  .body-promos .promo-section-container .promo-section-bottom .promo-img {
+    width: 30%;
+    height: 500px;
+  }
+  .body-promos .section-mediopagos .caja-efectivo {
+    margin: 1rem;
+  }
+  .body-promos .section-mediopagos .tarjetas {
+    margin: 1rem;
+  }
+  .body-promos .section-mediopagos .mercado-pago {
+    margin: 1rem;
   }
 }
 /*media movil 450 a 500px*/
@@ -1539,7 +1729,6 @@ html {
     padding: 2rem 0;
     width: 100%;
     margin: 0 auto;
-    flex-direction: column;
   }
   .body-nosotros .nosotros-main .nosotros-historia {
     margin: 2rem 1rem;

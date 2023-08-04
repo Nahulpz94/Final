@@ -106,7 +106,6 @@
             @include medidas (100%, 620px);
             @include flex(flex, space-around,center);
             .pizzaparty {/*foto pizza party */
-                display: flex;
                 @include medidas (500px, 600px);
                 @include shadow (5px, 10px);
                 border: #000000 1px solid;
