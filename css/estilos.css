@@ -534,7 +534,7 @@ html {
 .body-menu .card-container-grid {
   grid-area: section;
   width: 90%;
-  height: auto;
+  height: unset;
   margin: 20px auto;
   padding: 1rem 0;
   display: grid;
@@ -546,9 +546,11 @@ html {
   z-index: 99;
 }
 .body-menu .card-container-grid .card-container {
+  display: flex;
+  justify-content: center;
   position: relative;
   margin: 1.2rem;
-  width: 286px;
+  width: 100%;
   height: 270px;
   perspective: 1000px;
 }
@@ -721,7 +723,7 @@ html {
   grid-area: section-fotos;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: space-around;
   margin: 0 auto;
   padding: 3rem 2rem;
   flex-wrap: wrap;

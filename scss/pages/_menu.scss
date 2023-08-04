@@ -48,7 +48,7 @@
     }
     .card-container-grid {
         grid-area: section;
-        @include medidas(90%, auto);
+        @include medidas(90%, unset);
         margin: 20px auto;
         padding: 1rem 0;
         display: grid;
@@ -59,9 +59,11 @@
         justify-items: center;
         z-index: 99;
         .card-container {
+            display: flex;
+            justify-content: center;
             position: relative;
             margin: 1.2rem;
-            @include medidas(286px, 270px);
+            @include medidas(100%, 270px);
             perspective: 1000px;
         .card-1 {
             position: absolute;

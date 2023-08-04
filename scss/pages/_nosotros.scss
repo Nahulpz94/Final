@@ -61,7 +61,7 @@
         }
     .section-fotos { /*seccion fotos*/
         grid-area: section-fotos;
-        @include flex(flex, space-between, flex-start);
+        @include flex(flex, space-between, space-around);
         margin: 0 auto;
         padding: 3rem 2rem;
         flex-wrap: wrap;
