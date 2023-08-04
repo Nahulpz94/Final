@@ -48,18 +48,19 @@
     }
     .card-container-grid {
         grid-area: section;
-        @include medidas(90%, 650px);
+        @include medidas(90%, auto);
         margin: 20px auto;
         padding: 1rem 0;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 2fr;
+        grid-template-rows: 3fr;
         grid-gap: 10px;
         align-items: center;
         justify-items: center;
         z-index: 99;
         .card-container {
             position: relative;
+            margin: 1.2rem;
             @include medidas(286px, 270px);
             perspective: 1000px;
         .card-1 {

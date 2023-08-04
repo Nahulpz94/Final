@@ -534,12 +534,12 @@ html {
 .body-menu .card-container-grid {
   grid-area: section;
   width: 90%;
-  height: 650px;
+  height: auto;
   margin: 20px auto;
   padding: 1rem 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 2fr;
+  grid-template-rows: 3fr;
   grid-gap: 10px;
   align-items: center;
   justify-items: center;
@@ -547,6 +547,7 @@ html {
 }
 .body-menu .card-container-grid .card-container {
   position: relative;
+  margin: 1.2rem;
   width: 286px;
   height: 270px;
   perspective: 1000px;
@@ -1174,7 +1175,7 @@ html {
   box-shadow: 5px 5px 10px #1C3334;
 }
 
-@media (min-width: 1301px) and (max-width: 1500px) {
+@media (min-width: 1301px) and (max-width: 1700px) {
   .header {
     position: sticky;
     top: 0;
