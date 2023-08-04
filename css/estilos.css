@@ -1371,7 +1371,6 @@ html {
   .header {
     position: sticky;
     top: 0;
-    z-index: 10000;
     width: 100%;
   }
   .header .navbar {
@@ -1578,6 +1577,9 @@ html {
     width: 90%;
     height: auto;
     margin: 0 auto;
+  }
+  .body-promos {
+    display: block;
   }
   .body-promos .promo-section-container .promo-section-top {
     height: auto;
