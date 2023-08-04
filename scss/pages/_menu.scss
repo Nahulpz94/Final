@@ -8,11 +8,11 @@
     "section"
     "div"
     "footer";
-    position: absolute;
     width: $full-width;
     background-image: url(../imgs/menu/fondo-menu-3.webp); /*fondo*/
     background-repeat: no-repeat;
     background-size: cover; 
+    height: 100%;
     .contenedor-h1-menu{
         grid-area: h1;
         width: 90%;

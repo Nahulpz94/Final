@@ -109,7 +109,6 @@
     }
 
     .body-menu {
-        position: absolute;
         display: block;
         .contenedor-h1-menu{
             .nuestro-menu {
@@ -134,7 +133,6 @@
             height: unset;
             margin: 0 auto;
             justify-items: center;
-            align-items: center;
             .card-container{
                 .card-1{
                     width: 100%;
@@ -362,7 +360,6 @@
 }
     
     .body-menu {
-        position: absolute;
         display: block;
         .contenedor-h1-menu{
             .nuestro-menu {
@@ -478,8 +475,8 @@
 
 }
     
-/*media movil 450 a 500px*/
-@media (min-width:450px) and (max-width: 500px){
+/*media movil 450 a 600px*/
+@media (min-width:450px) and (max-width: 600px){
 
     .header {
         @include flex(flex, center,center);
@@ -671,6 +668,7 @@
         }
     }
     .body-menu {
+        position: absolute;
     .contenedor-h1-menu{
         padding: 20px;
         @include flex(flex, center, center);
@@ -678,7 +676,7 @@
         .nuestro-menu {
             @include medidas (90%, auto);
             padding: 20px;
-            font-size: 2em;
+            font-size: 3em;
         }
     }
     .menu-section-top {
@@ -720,6 +718,7 @@
         margin: 0;
         .nosotros-main {
             display: flex;
+            flex-direction: column;
             padding: 2rem 0;
             width: 100%;
             margin: 0 auto;
@@ -727,6 +726,15 @@
                 margin: 2rem 1rem;
                 padding-left: 1rem;
                 text-align: left;
+            }
+            .img-nosotros {
+                width: 100%;  
+                margin: 1rem
+            }
+            #img-masas{
+                width: 400px;
+                height: 500px;  
+                margin: 1rem
             }
         }
         .contenedor-h1-nosotros{
@@ -1074,7 +1082,8 @@
             }
         }
     }
-    #body-menu { /*menu*/
+    .body-menu { /*menu*/
+        position: absolute;
     .contenedor-h1-menu{
         padding: 20px;
         @include flex(flex, center, center);
