@@ -23,8 +23,7 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-/*fondo index*/
-.body-index {
+.body-index { /*fondo index*/
   width: 100%;
   min-height: 100vh;
   background-image: url(../imgs/main/fondo-indexx.webp);
@@ -1179,6 +1178,21 @@ html {
   box-shadow: 5px 5px 10px #1C3334;
 }
 
+@media (min-width: 1701px) and (max-width: 1919px) {
+  .body-nosotros .section-fotos {
+    display: flex;
+  }
+  .body-nosotros .section-fotos .img-nosotros {
+    width: 22%;
+  }
+  .body-promos .promo-section-container .promo-section-top .promo-img {
+    width: 30%;
+  }
+  .body-promos .promo-section-container .promo-section-bottom .promo-img {
+    width: 30%;
+  }
+}
+/*media desktop 1301 en adelante*/
 @media (min-width: 1301px) and (max-width: 1700px) {
   .header {
     position: sticky;
@@ -1186,7 +1200,7 @@ html {
     z-index: 100;
     width: 100%;
   }
-  .header .navbar {
+  .header .navbar { /*estilos del nav*/
     width: 100%;
     height: unset;
     padding: 0;
@@ -1221,7 +1235,7 @@ html {
   .header .navbar .container .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
     transform: scale(1.05);
   }
-  .body-index {
+  .body-index { /*body*/
     display: block;
   }
   .body-index .main-index .main-overlay .contenedor-volvimos .volvimos {
@@ -1240,14 +1254,14 @@ html {
     letter-spacing: 0;
     color: #F8B195;
   }
-  .body-index .main-index .main-overlay .contenedor-botones-index {
+  .body-index .main-index .main-overlay .contenedor-botones-index { /*botones*/
     height: unset;
   }
   .body-index .main-index .main-overlay .contenedor-botones-index .boton {
     height: 35px;
     padding: 10px 0;
   }
-  .body-index .index-section-bottom {
+  .body-index .index-section-bottom { /*seccion inferior*/
     display: block;
     display: flex;
     justify-content: space-between;
@@ -1259,7 +1273,7 @@ html {
     text-align: center;
     animation-name: none;
   }
-  .body-index .index-section-bottom .contenedor-videos-index {
+  .body-index .index-section-bottom .contenedor-videos-index { /*videos*/
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -1279,7 +1293,7 @@ html {
   .body-index .index-section-bottom .contenedor-videos-index .logo-novedad {
     width: 33%;
   }
-  .body-menu {
+  .body-menu { /*menu*/
     display: block;
   }
   .body-menu .contenedor-h1-menu .nuestro-menu {
@@ -1293,7 +1307,7 @@ html {
     width: 30%;
     margin: 1rem 0;
   }
-  .body-menu .card-container-grid {
+  .body-menu .card-container-grid { /*cards*/
     padding: 2rem 0;
     display: grid;
     width: 90%;
@@ -1320,6 +1334,7 @@ html {
     width: 30%;
     margin: 1rem 0;
   }
+  .body-nosotros { /*nosotros*/ }
   .body-nosotros .nosotros-main {
     width: 90%;
   }
@@ -1336,7 +1351,7 @@ html {
     width: 320px;
     height: 500px;
   }
-  .body-nosotros .section-fotos {
+  .body-nosotros .section-fotos { /*fotos*/
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -1351,6 +1366,7 @@ html {
     width: 100%;
     height: 400px;
   }
+  .body-promos { /*promos*/ }
   .body-promos .promo-section-container .promo-section-top {
     height: auto;
     padding: 2rem 0 1rem 0;
@@ -1368,6 +1384,7 @@ html {
     height: 500px;
   }
 }
+/*medias desktop 1024 a 1300*/
 @media (min-width: 1024px) and (max-width: 1300px) {
   .header {
     position: sticky;
@@ -1383,8 +1400,9 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
   }
-  .header .navbar .container .navbar-brand {
+  .header .navbar .container .navbar-brand { /*logo*/
     width: 20%;
     padding: 0;
     margin: 0;
@@ -1414,6 +1432,7 @@ html {
     transform: scale(1.05);
   }
   .header .navbar .container .offcanvas-body .gap-1 {
+    /*Estilos para el logo-redes*/
     display: none;
     height: 0% !important;
     width: 0% !important;
@@ -1423,7 +1442,7 @@ html {
   .header .navbar .container .offcanvas-body .gap-1 a {
     display: none;
   }
-  .body-index {
+  .body-index { /*index*/
     display: block;
     width: 100%;
     height: unset;
@@ -1505,7 +1524,7 @@ html {
     width: 0%;
     display: none;
   }
-  .body-menu {
+  .body-menu { /*menu*/
     display: block;
     background-image: url(../../imgs/fondo-general.webp);
     background-size: cover;
@@ -1523,7 +1542,7 @@ html {
     width: 100%;
     margin: 1rem 0;
   }
-  .body-menu .card-container-grid {
+  .body-menu .card-container-grid { /*cards*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 4fr;
@@ -1559,6 +1578,7 @@ html {
     width: 100%;
     margin: 1rem 0;
   }
+  .body-nosotros { /*nosotros*/ }
   .body-nosotros .nosotros-main {
     width: 90%;
     flex-direction: column;
@@ -1589,6 +1609,7 @@ html {
   }
   .body-promos {
     display: block;
+    width: 100%;
   }
   .body-promos .promo-section-container .promo-section-top {
     height: auto;
@@ -1621,7 +1642,7 @@ html {
 }
 /*media movil 450 a 600px*/
 @media (min-width: 450px) and (max-width: 600px) {
-  .header {
+  .header { /*header*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1671,7 +1692,7 @@ html {
     width: unset;
     margin: 5px auto 0;
   }
-  .body-index {
+  .body-index { /*index*/
     display: block;
     width: 100%;
     height: unset;
@@ -1762,7 +1783,7 @@ html {
     width: 100%;
     display: none;
   }
-  .footer {
+  .footer { /*footer*/
     height: unset;
     max-width: 100%;
     display: flex;
@@ -1864,7 +1885,7 @@ html {
     width: 30px;
     height: 30px;
   }
-  .body-menu {
+  .body-menu { /*menu*/
     position: absolute;
   }
   .body-menu .contenedor-h1-menu {
@@ -1923,7 +1944,7 @@ html {
     align-items: center;
     margin: 2rem 1rem 2rem 1rem;
   }
-  .body-nosotros {
+  .body-nosotros { /*nosotros*/
     width: 100%;
     height: 100vh;
     display: block;
@@ -1991,7 +2012,7 @@ html {
     margin: 1rem 0;
     border: none;
   }
-  .body-promos {
+  .body-promos { /*promos*/
     width: 100%;
     height: 100vh;
     display: block;
@@ -2074,7 +2095,7 @@ html {
     border-radius: 5px;
     box-shadow: 4px 4px 8px #1C3334;
   }
-  .body-contacto {
+  .body-contacto { /*contacto*/
     width: 100%;
     height: unset;
     display: block;
@@ -2132,7 +2153,7 @@ html {
 } /*cierre querie*/
 /*media movil 320 a 449px*/
 @media (min-width: 320px) and (max-width: 449px) {
-  .header {
+  .header { /*header*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2419,7 +2440,7 @@ html {
     margin-bottom: 1rem;
     width: 100%;
   }
-  .body-menu .card-container-grid {
+  .body-menu .card-container-grid { /*cards*/
     display: flex;
     justify-content: center;
     align-items: center;
