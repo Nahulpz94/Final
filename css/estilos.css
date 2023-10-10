@@ -522,9 +522,6 @@ html {
   margin: 0 auto;
   padding: 2rem 1rem;
   background-color: #AE2A3F;
-  animation-name: slideInUp;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
 }
 .body-menu .menu-section-top .img-menu {
   width: 32%;
@@ -687,10 +684,6 @@ html {
   margin: 0 auto;
   padding: 1rem 2rem;
   background-color: #F5F5F5;
-  animation-name: slideInUp;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
 }
 .body-nosotros .nosotros-main .img-nosotros {
   width: 400px;
@@ -730,10 +723,6 @@ html {
   width: 90%;
   height: unset;
   background-color: #FFD3B5;
-  animation-name: slideInUp;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
 }
 .body-nosotros .section-fotos .img-nosotros {
   width: 400px;
@@ -806,10 +795,6 @@ html {
   width: 90%;
   height: 750px;
   background-color: #FF5733;
-  animation-name: slideInUp;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
 }
 .body-promos .promo-section-container .promo-section-top .promo-img {
   width: 100%;
@@ -830,9 +815,6 @@ html {
   align-items: center;
   padding: 0 2rem 2rem;
   margin: 0 auto;
-  animation-name: bounceInUp;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
   background-color: #FF5733;
 }
 .body-promos .promo-section-container .promo-section-bottom .promo-img {
@@ -1008,10 +990,6 @@ html {
   width: 100%;
   border-radius: 5px;
   box-shadow: 5px 5px 10px #1C3334;
-  animation-name: slideInUp;
-  animation-duration: 1.5s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
 }
 .body-contacto .main-contacto { /*main contacto*/
   grid-area: main;
@@ -1027,10 +1005,6 @@ html {
   background-size: cover;
   border-radius: 5px;
   box-shadow: 2px 2px 4px #1C3334;
-  animation-name: slideInUp;
-  animation-duration: 1.9s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
 }
 .body-contacto .main-contacto .form-contacto { /*formulario de contacto*/
   padding: 14px;

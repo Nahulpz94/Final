@@ -40,7 +40,6 @@
         margin: 0 auto;
         padding: 2rem 1rem;
         background-color: map-get($colores , primario);
-        @include animate(slideInUp, 2s, 1);
         .img-menu{ 
             width: 32%;
             @include shadow (5px, 5px);

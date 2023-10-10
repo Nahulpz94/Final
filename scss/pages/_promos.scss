@@ -38,8 +38,6 @@
             margin: 0 auto;
             @include medidas (90%, 750px);
             background-color: map-get($colores, detalles-naranja);
-            @include animate(slideInUp, 2s, 1);
-            animation-timing-function: ease-in-out;
             .promo-img {
                 @include medidas (100%,700px);
                 margin: 10px;
@@ -55,7 +53,6 @@
             @include flex(flex, space-evenly, center);
             padding: 0 2rem 2rem;
             margin: 0 auto;
-            @include animate(bounceInUp, 3s, 1);
             background-color: map-get($colores, detalles-naranja);
             .promo-img {
                 @include medidas (100%,700px);

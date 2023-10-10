@@ -38,8 +38,6 @@
         .banner-contacto {
             width: $full-width;
             @include shadow (5px, 5px);
-            @include animate(slideInUp, 1.5s, 1);
-            animation-timing-function: ease-in;
         }
     }
     .main-contacto {/*main contacto*/
@@ -52,8 +50,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         @include shadow (5px, 2px);
-        @include animate(slideInUp, 1.9s, 1);
-        animation-timing-function: ease-in;
         .form-contacto{    /*formulario de contacto*/
             padding: 14px;
             font-size: 20px;

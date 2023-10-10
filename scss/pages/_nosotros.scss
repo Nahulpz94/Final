@@ -38,8 +38,6 @@
         margin: 0 auto;
         padding: 1rem 2rem;
         background-color:map-get($colores , terciario);
-        @include animate(slideInUp, 2s, 1);
-        animation-timing-function: ease-in;
         .img-nosotros{
             @include medidas (400px, 500px);
             @include shadow (5px, 10px);
@@ -67,8 +65,6 @@
         flex-wrap: wrap;
         @include medidas (90%, unset);
         background-color: map-get($colores , salmon-claro) ;
-        @include animate(slideInUp, 3s, 1);
-        animation-timing-function: ease-in;
         .img-nosotros{
             @include medidas (400px, 500px);
             @include shadow (5px, 10px);
